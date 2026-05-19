@@ -39,7 +39,7 @@
     
     | 번호 | 자원명 | 태그명 | 세부내용 |
     | --- | --- | --- | --- |
-    | 1 | Security Group | rtm-openvpn-sg | 22,80,443,943,945,1194: 내IP |
+    | 1 | Security Group | rtm-openvpn-sg | 22,80,443,943,945,1194: 전 세계 허용 |
     | 2 | Elastic IP | rtm-openvpn-eip1 |  |
     | 3 | OpenVPN Access Server | rtm-openvpn1 | rtm-pub-sn1<br>rtm-openvpn-eip1<br>172.16.1.100<br>rtm-openvpn-sg |
     | 4 | Elastic IP | rtm-openvpn-eip2 |  |
