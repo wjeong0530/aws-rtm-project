@@ -53,7 +53,7 @@
     | 2 | Target Group | rtm-web-tg | 대상 없음<br>상태검사: /login.php<br>상태검사주기: 10초<br>Healthy: 3<br>Unhealthy: 3 |
     | 3 | Application Load Balancer | rtm-web-alb | 인터넷 경계<br>rtm-pub-sn1, rtm-pub-sn 위치 |
     | 4 | Security Group | rtm-web-sg | SSH: 172.16.0.0/16<br>HTTP: rtm-alb-sg 허용<br>HTTPS: rtm-alb-sg 허용<br>ICMP: 172.16.1.100, 172.16.2.100 허용 |
-    | 5 | Launch Template1 | rtm-web-lt | Amazon Linux 3 AMI<br>t3.micro<br>rtm-weg-tg<br>rtm-key<br>rtm-web-sg |
+    | 5 | Launch Template1 | rtm-web-lt | Amazon Linux 2023 kernel-6.1 AMI<br>t3.micro<br>rtm-weg-tg<br>rtm-key<br>rtm-web-sg |
     | 6 | Auto Scaling Group | rtm-web-asg | rtm-web-lt<br>rtm-web-tg<br>rtm-pri-sn3<br>rtm-pri-sn4<br>용량: 2<br>최소: 2<br>최대: 4<br>Target Tracking Scaling: 50% |
 
 ## 프로젝트 목표:
